@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Blackjack</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class='titulo'>
+        Blackjack
+    </header>
+    <div class="row mt-2 ">
+        <div class="col text-center">
+            <button id = 'btnNuevoJuego' class="btn btn-danger">Nuevo Juego</button>
+            <button id = 'btnPedir' disabled = 'disabled' class="btn btn-primary">Pedir Cartas</button>
+            <button id = 'btnDetener' disabled='disabled' class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador 1 - <small>0</small> </h1>
+            <div id="jugador-cartas" class="divCartas"></div>
+        </div>
+    </div>
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>Computadora - <small>0</small> </h1>
+            <div id="computadora-cartas" class="divCartas"></div>
+        </div>
+    </div>
+    <script src='assets/js/underscore.js'></script>
+    <script src="assets/js/juego.js" type="module"></script>
+</body>
+</html>
+
