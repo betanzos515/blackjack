@@ -20,6 +20,8 @@ const divCartas = document.querySelectorAll('.divCartas');
 
 //Esta funcion inicializa el deck
 const inicializarJuego = ( numJugadores = 2 )=>{
+    
+
     crearDeck();
     puntosJugadores = [];
     btnDetener.disabled = false;
@@ -31,6 +33,10 @@ const inicializarJuego = ( numJugadores = 2 )=>{
     for(let i = 0 ; i < numJugadores; i++){
         puntosJugadores.push(0);
     }
+    if(divCartas[0].length > 0 && divCartas[1].length){
+        console.log('existen elementos en el dom renderizados')
+    }
+    divCartas.forEach(elemento=> elemento.innerHTML='');
 }
 
 const crearDeck = ()=> {
