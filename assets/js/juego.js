@@ -105,13 +105,13 @@ const turnoComputadora = (puntosMinimos)=>{
 const determinarGanador = (puntosMinimos)=>{
     setTimeout(() => {
         if(puntosJugadores[0] === puntosJugadores[1]){
-            console.log('Nadie Gana ...');
+            alert('Nadie Gana ...');
         }
         else if( puntosMinimos > 21 ){
-            console.log('Computadora Gana');
+            alert('computadora gana ...');
         }
         else if ( puntosJugadores[1] > 21 ){
-           console.log('Judador Gana');
+            alert('jugador gana ...');
         }
         else{
             console.log('La computadora gano');
